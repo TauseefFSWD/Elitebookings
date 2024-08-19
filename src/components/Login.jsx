@@ -30,7 +30,7 @@ const Login = () => {
     <div>
       <div className="login-container">
         <div className="login-form-container">
-          <h1>Login to CinePalace</h1>
+          <h1>Login to EliteBookings</h1>
           <form className="login-form" onSubmit={handleLogin}>
             <input
               type="text"
