@@ -1,0 +1,111 @@
+/* General styles for the Movies page */
+.movies-container {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 1.8rem; /* Slightly smaller font size for better fit on mobile */
+  margin-bottom: 20px;
+  text-align: center; /* Center align section titles */
+}
+
+/* Flexbox layout for containers */
+.halls-container, .movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styles */
+.hall-card, .movie-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%; /* Full width on mobile for better fit */
+  max-width: 350px; /* Maximum width to ensure cards don’t get too large */
+  height: auto; /* Height adjusts based on content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition effect */
+  margin: 0 auto; /* Center cards horizontally */
+}
+
+.hall-card:hover, .movie-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Image styles */
+.hall-image, .movie-image {
+  width: 100%;
+  height: 60%; /* Adjusted to fit proportionally within the card */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+/* Text styles */
+.hall-name, .movie-title {
+  font-size: 1.1rem; /* Adjusted for better mobile readability */
+  margin: 10px 0;
+}
+
+.movie-description {
+  font-size: 0.85rem; /* Slightly smaller text for better fit on mobile */
+  color: #555;
+  padding: 0 10px;
+  margin-bottom: 10px; /* Space before the button */
+}
+
+/* Button styles */
+.book-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto; /* Push button to the bottom */
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .hall-card, .movie-card {
+    max-width: 320px; /* Adjust max-width for tablets */
+  }
+}
+
+@media (max-width: 992px) {
+  .hall-card, .movie-card {
+    max-width: 290px; /* Adjust max-width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .hall-card, .movie-card {
+    max-width: 100%;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .section h2 {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .section h2 {
+    font-size: 1.3rem; /* Even smaller font size for very small screens */
+  }
+}

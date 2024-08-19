@@ -1,0 +1,191 @@
+.home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-container {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Adjust card width to be responsive */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Default card image style */
+  .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Specific style for movie section to increase the image height */
+  .card-container:nth-of-type(2) .card-image {
+    height: 450px;
+  }
+  
+  /* Adjust content and button positioning */
+  .card-content {
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Allow the content to expand */
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .book-button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .book-button:hover {
+    background-color: #218838;
+  }
+  
+  .logout-button {
+    margin-top: 50px;
+    padding: 12px 30px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .card-container {
+      gap: 20px;
+    }
+  
+    .card {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .card-container {
+      gap: 15px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .card-container:nth-of-type(2) .card-image {
+      height: 350px; /* Reduce movie card height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .card-container:nth-of-type(2) .card-image {
+      height: 300px; /* Further reduce movie card height */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .card {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .card-container:nth-of-type(2) .card-image {
+      height: 250px; /* Reduce movie card height on very small screens */
+    }
+  }
+  /* Existing styles */
+
+.explore-more-button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .explore-more-button:hover {
+    background-color: #28a745;
+  }
+  

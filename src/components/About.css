@@ -1,0 +1,51 @@
+.about-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .about-container h1, .about-container h2 {
+    color: #0062E6; /* Theme color */
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .service-section {
+    margin-top: 40px;
+  }
+  
+  .service-section h3 {
+    font-size: 1.5rem;
+    color: #33AEFF; /* Secondary theme color */
+    margin-bottom: 10px;
+  }
+  
+  .service-section h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #0062E6;
+    padding-left: 15px;
+    margin: 20px 0;
+  }
+  
+  .developer-section {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .developer-section strong {
+    color: #0062E6;
+  }
+  

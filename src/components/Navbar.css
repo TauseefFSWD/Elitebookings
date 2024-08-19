@@ -1,0 +1,113 @@
+/* Navbar container */
+.navbar {
+  background: linear-gradient(to right, #0062E6, #33AEFF); /* Gradient matching the theme */
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure positioning for mobile menu toggle */
+}
+
+/* Navbar content container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between; /* Aligns logo and menu items */
+}
+
+/* Navbar logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* Navbar menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+/* Navbar menu items */
+.navbar-menu li {
+  margin: 0;
+}
+
+/* Navbar links */
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Navbar links hover effect */
+.navbar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white background on hover */
+  border-radius: 4px; /* Rounded corners for the hover effect */
+  color: #0062E6; /* Color change on hover */
+}
+
+/* Mobile menu button */
+.navbar-toggle {
+  display: none; /* Hidden by default */
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.navbar-menu-mobile {
+  display: none; /* Hidden by default */
+  list-style: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: linear-gradient(to right, #0062E6, #33AEFF); /* Same background as navbar */
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Mobile menu links */
+.navbar-menu-mobile a {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Mobile menu links hover effect */
+.navbar-menu-mobile a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #33AEFF;
+}
+
+/* Show mobile menu on button click */
+.navbar-menu-mobile.show {
+  display: flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide desktop menu on small screens */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+
+  .navbar-menu-mobile.show {
+    display: flex; /* Display mobile menu when active */
+  }
+}

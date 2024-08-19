@@ -1,0 +1,46 @@
+/* Footer container */
+.footer {
+    background: #0062E6; /* Matching the primary theme color */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Footer text */
+  .footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Social media icons container */
+  .footer-socials {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Social media icons */
+  .social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #33AEFF; /* Hover color matching the gradient */
+  }
+  
